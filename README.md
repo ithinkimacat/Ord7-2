@@ -5,8 +5,8 @@ server-rendered with Postgres, auth and server actions; this folder contains the
 public pages only.
 
 Working: navigation, member profiles, search + ray filters, the calendar's
-current month, the journal, the hero parallax, the hoverable 33-vertebra spine,
-and live Discord member/online counts (fetched in the browser from Discord's
+current month, the journal, the hero parallax, the hoverable 33-vertebra spine
+(segmented from Presentation 26), and live Discord member/online counts (fetched in the browser from Discord's
 public invite endpoint).
 
 Disabled: sign-in, registration, posting, editing profiles, changing months.
