@@ -5,8 +5,9 @@ server-rendered with Postgres, auth and server actions; this folder contains the
 public pages only.
 
 Working: navigation, member profiles, search + ray filters, the calendar's
-current month, the journal, the hero parallax, and live Discord member/online
-counts (fetched in the browser from Discord's public invite endpoint).
+current month, the journal, the hero parallax, the hoverable 33-vertebra spine,
+and live Discord member/online counts (fetched in the browser from Discord's
+public invite endpoint).
 
 Disabled: sign-in, registration, posting, editing profiles, changing months.
 
@@ -42,3 +43,7 @@ npm run build
 npm start -- -p 3107
 node scripts/export-github-pages.mjs /path/to/Ord7
 ```
+
+The exporter updates files in place and never removes .git. It tracks the
+pages it wrote in .export-manifest.json, so stale member or post pages are
+cleaned up without touching anything you added.
